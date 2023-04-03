@@ -1,0 +1,226 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    display: grid;
+    grid-template-areas: "header header header header"
+                         "hero hero hero hero"
+                         "about about about about"
+                         "projects projects projects projects"
+                         "social social social social";
+    grid-template-columns: repeat(4, 1fr);
+    background: url(../images/image-background.png) center center no-repeat;
+    background-size: cover;
+    max-width: var(--max-width-size);
+}
+
+
+/* HEADER */
+.header{   
+    grid-area: header;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.header .header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+    padding: 20px 20px;
+}
+
+.header .header-container .logo span{
+    display: flex;  
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.8rem;
+    transition: 0.5s;
+    color: #0E8388;
+}
+
+/* HERO */
+.hero{
+    grid-area: hero;
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+    background: url(../images/imagem-fundo.png) center center no-repeat;
+    background-size: cover;
+}
+
+.hero .hero-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    color: #062C30;
+}
+
+.hero .hero-title h2{
+    font-size: 6rem;    
+    font-weight: 600;
+    padding: 25px;
+    color: #0E8388;
+}
+
+.hero .hero-title p{
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 400;
+}
+
+.hero .hero-title .btn-clique-aqui{
+    padding: 20px 50px;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    background-color: #D9E9ED;
+    color: #0E8388;
+    margin-top: 25px;
+    text-align: center;
+    transition: 0.5s;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.hero .hero-title .btn-clique-aqui:hover{
+    background-color: #0E8388;
+    color: #fff;
+}
+
+
+/* ABOUT */
+.about{
+    grid-area: about;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 25px;    
+    min-height: 60vh;
+}
+
+.about .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    font-family: 'Poppins', sans-serif;
+    color: #062C30;
+}
+
+.about .info h2{
+    font-size: 6rem;    
+    font-weight: 600;
+    color: #0E8388;
+}
+
+.about .info p{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.about .image-about{
+    background: url(../images/imagem-about.png) center center no-repeat;
+    background-size: cover
+}
+
+
+/* PROJECT */
+.projects{
+    grid-area: projects;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 65vh;
+}
+
+.projects .project{
+    padding: 30px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projects .project img{
+    width: 400px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects .project h2{
+    font-size: 4rem;    
+    font-weight: 600;
+    color: #0E8388;
+}
+
+.projects .project p{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.projects .project .btn-saiba-mais{
+    padding: 20px 50px;
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 600;
+    background-color: #D9E9ED;
+    color: #0E8388;
+    margin-top: 25px;
+    text-align: center;
+    transition: 0.5s;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.projects .project .btn-saiba-mais:hover{
+    background-color: #0E8388;
+    color: #fff;
+}
+
+
+
+/* SOCIAL */
+.social{
+    grid-area: social;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 25px;
+    min-height: 40vh;
+}
+
+.social a{
+    text-align: center;
+    font-size: 3rem;    
+    font-weight: 600;
+    color: #0E8388;
+    padding: 15px;
+}
+
+.social .social-media i{
+    font-weight: 600;
+    font-size: 2rem;
+    transition: 0.3s;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.social .social-media i:hover{
+    background-color: #E4EAEC;
+    color: #062C30;     
+    border: 1px solid #062C30;   
+}
